@@ -1,5 +1,5 @@
-D="result02-rand"
-D2="fixed6"
+D="result-rand03-2"
+D2="acc032"
 python merge_dataset.py $D $D2
 mv $D/*.py $D2
 cd $D2

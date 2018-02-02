@@ -22,7 +22,7 @@ def nearest_predict(vec,mat,pos):
     ans = np.argsort(res)[:10]
 #     for i in ans:
 #         vis_depth(mat[i,:])
-    return np.mean(pos[ans], axis=0), ans[0]
+    return np.mean(pos[ans], axis=0), mat[ans[0]]
 
 def draw_comparison(y_pred, y):
     for i in range(y_pred.shape[1]):
